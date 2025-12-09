@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashoma</title>
+    <meta name=" Description " content="Conoce cada uno de los personajes y aventuras de Masha y el Oso">
+    <meta name="keywords" content="Masha, Oso, serie animada, niños">
+    <meta name=" author" content="Sara">
+    <meta name=" copyright" content="Sara 2025">
+    <meta name=" aplication-name" content=" Masha y el oso">
+    <!-- Boostrap CSS CDN-->
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel=" stylesheet">
+    <!-- CSS-->
+     <link rel=" stylesheet" href=" styles.css">
+
+</head>
+<body>
+<!--========= BANNER PROMOCIONAL =========-->  
+<div id="banner" class="p-3 text-white text-center bg-danger">
+  <!-- chicos: este banner será manipulado con getElementById -->
+  Banner de promoción: ¡Inscríbete ahora y obtén un 20% de descuento
+  en todos nuestros talleres!
+</div>
+<!--=========NAVBAR========
+Chicos menú superior, se vuelve botón hamburguesa en móviles-->
+<nav class=" navbar navbar-expand-lg bg-body-tertiary sticky-top"aria-label=" Navegación principal">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <!-- Logo de mi marca-->
+       <img src="img/logo.jpg" height="50" alt="Logo de mi marca" class="me-2" >
+    <span class=" fw-semibold"> Masha y el Oso </span>
+   </a>
+   <!-- Botón hamburguesa-->
+    <button class=" navbar-toggler" type=" button" data-bs-toggle=" collapse" data-bs-target="#mainNavbar" aria-expanded=" false" aria-label=" Alternar Navegación">
+      <span class=" navbar-toggler-icon"></span>
+      </button>
+    <!-- Enlaces del menu-->
+     <div class=" collapse navbar-collapse" id=" mainNavbar">
+      <ul class=" navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class=" nav-item"><a class="nav-link active" aria-current="page" href="#"> Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Productos"> Personajes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contacto"> Aventuras</a></li>
+        <li class="nav-item"><a class="nav-link" href="#agregar-imagen">Agregar imagen</a> </li>
+
+        </ul>
+      </div>
+     </div>
+  </nav>
+
+  <!-- ============== CARRUSEL VAMOS A AGREGAR IMAGENES A NUESTRA PAGINA/MARCA =============-->
+   <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+
+  <!-- Indicadores -->
+   <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCorousel" data-bs-slide-to="0"
+    class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#mainCorousel" data-bs-slide-to="1"
+     aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#mainCorousel" data-bs-slide-to="2"
+     aria-label="Slide 3"></button>
+   </div>
+
+    <div class="carousel-inner rouded-3 shadow - sm">
+  <!-- Slide 1 --> 
+      <div class="carousel-item active">
+        <img src="img/oso.jpg" class="d-block w-100" alt="Masha y Oso" style="height: 380px;object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block text-start">
+        <h5> Masha y el oso </h5>
+        <p> Conoce las aventuras y personajes de Masha y el oso </p>
+        <a href="#serie animada" class="btn btn-primary"> Ver más</a>
+      </div>
+    </div>
+  <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="img/oso1.jpg" class="d-block w-100" alt="Masha" slyle="height: 380px;object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+           <h5> Masha y el oso </h5>
+           <p> Conoce las aventuras y personajes de Masha y el oso </p>
+           <a href="#serie animada" class="btn btn-light byn-sm"> Ver más</a>
+          </div>
+        </div>
+
+  <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="img/oso2.jpg" class="d-block w-100" alt="Oso" slyle="height: 380px;object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block text-end">
+              <h5> Masha y el oso </h5>
+              <p> Conoce las aventuras y personajes de Masha y el oso </p>
+              <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#serie animada">
+              Más información</button>
+          </div>
+        </div>  
+       </div>  
+      </div>  
+
+ <!-- ================ SECCIÓN PRINCIPAL ===================--> 
+  <section class=" container my-5">
+    <h1 class=" text-center mb-4"> Bienvenidos al Mundo de Masha y el Oso</h1>
+    <p class="text-center lead">Conoce cada uno de los personajes y aventuras de Masha y el Oso.</p>
+   </section>
+
+  <!-- ============== BOTONES ======
+   <section class=" container my-5">
+    <h2> Botones (Buttons)</h2>
+    <button class="btn btn-primary">Primario</button>
+    <button class="btn btn-secondary">Secundario</button>
+    <button class="btn btn-success">Éxito</button>
+    <button class="btn btn-danger">Peligro</button>
+    <button class="btn btn-warning">Advertencia</button>
+    ======== -->
+   </section>
+    
+   <!-- ===================== ALERTAS =================-->
+    <section class=" container my-5">
+      <h2> Alertas (Alerts)</h2>
+      <div class="alert alert-info" role="alert">
+        ¡Atento a nuestras novedades!
+        Muy pronto podrás tener acceso a videos exclusivos de Masha y el Oso!
+      </div>
+    </section>
+    
+   <!-- ============= TARJETAS ===============-->
+<section class="container my-5" id="Productos">
+  <h2 class="mb-4">Masha y el Oso</h2>
+  <div class="row g-4">
+    
+    <!-- Tarjeta básica -->
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Masha</h5>
+          <p class="card-text">Es la protagonista de la serie, es una niña energetica y curiosa que vive aventuras con el oso.</p>
+          <a href="#" class="btn btn-primary">Más información</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta con imagen -->
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="img/Osoo.jpg" class="card-img-top" alt="Oso">
+        <div class="card-body">
+          <h5 class="card-title">Oso</h5>
+          <p class="card-text">Es un oso paardo europeo que vive en el bosque y se convierte en el mejor amigo de Masha después de que ella causa un gran desorden en su casa.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta con encabezado -->
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Recomendación</h5>
+          <p class="card-text"> La serie enseña valores importantes como la amistad, la creatividad, la curiosidad y la resolución de problemas.</p>
+          <a href="#" class="btn btn-success">Para ver da click</a>
+        </div>
+        <div class="card-footer">
+          ¡Conoce más aventuras y disfruta!
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ============= CONTACTO ===============-->
+  <section class="container my-5" id="Contacto">
+    <h2 class="mb-4">Contáctanos</h2>
+    <div class="card border-secondary" style="width: 18rem; background-color: #f8f9fa;">
+      <div class="card-header bg-secondary text-white">
+        Contáctanos
+      </div>
+      <div class="card-body text-dark">
+        <h5 class="card-title">¿Tienes dudas?</h5>
+        <p class="card-text">Escríbenos si tienes alguna duda.</p>
+        <ul class="list-unstyled mb-3">
+          <li>📞 7203528200</li>
+          <li>📧 m.guadarrama006@ebc.edu.mx</li>
+        </ul>
+        <a href="#" class="btn btn-success">Enviar mensaje</a>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== TESTIMONIOS ==================== -->
+   <!-- ======== TESTIMONIOS ======== -->
+<section class="container my-5">
+    <h2>Testimonios de nuestros clientes</h2>
+
+    <!-- Testimonio VIP -->
+    <div class="testimonio-vip d-flex align-items-start mb-4 p-3 border rounded shadow-sm">
+        <!-- Foto o imagen del cliente -->
+        <img src="img/testimonio.jpg"
+             alt="Foto de Cliente VIP"
+             class="rounded-circle me-3"
+             width="70"
+             height="70">
+        <!-- Contenido del testimonio -->
+        <div>
+            <h5 class="mb-1 fw-bold">Cliente VIP</h5>
+            <p class="mb-0">
+                "Los capitulos de Masha de aquí son los más divertidos, además son super dificil de encontrar en otro lugar"
+            </p>
+        </div>
+    </div>
+
+    <!-- Testimonio Regular -->
+<div class="d-flex align-items-start mb-4 p-3 border rounded">
+    <!-- Foto o imagen del cliente -->
+    <img src="img/Testimonio1.jpg"
+         alt="Foto de Cliente Regular"
+         class="rounded-circle me-3"
+         width="70"
+         height="70">
+    <!-- Contenido del testimonio -->
+    <div>
+        <h5 class="mb-1">Cliente Regular</h5>
+        <p class="mb-0">
+            "Excelente contenido y profesores. Los talleres me ayudaron a mejorar mis habilidades en marketing e IA."
+        </p>
+    </div>
+</div>
+
+ <!-- Testimonio VIP -->
+    <div class="testimonio-vip d-flex align-items-start mb-4 p-3 border rounded shadow-sm">
+        <!-- Foto o imagen del cliente -->
+        <img src="img/testimonio3.png"
+             alt="Foto de Cliente VIP"
+             class="rounded-circle me-3"
+             width="70"
+             height="70">
+        <!-- Contenido del testimonio -->
+        <div>
+            <h5 class="mb-1 fw-bold">Cliente VIP</h5>
+            <p class="mb-0">
+                "Los capitulos de Masha de aquí son los más divertidos, además son super dificil de encontrar en otro lugar"
+            </p>
+        </div>
+    </div>
+
+    <!-- Testimonio Regular -->
+<div class="d-flex align-items-start mb-4 p-3 border rounded">
+    <!-- Foto o imagen del cliente -->
+    <img src="img/Testimonio2.png"
+         alt="Foto de Cliente Regular"
+         class="rounded-circle me-3"
+         width="70"
+         height="70">
+    <!-- Contenido del testimonio -->
+    <div>
+        <h5 class="mb-1">Cliente Regular</h5>
+        <p class="mb-0">
+            "Excelente contenido y profesores. Los talleres me ayudaron a mejorar mis habilidades en marketing e IA."
+        </p>
+    </div>
+</div>
+</section>
+
+   <!-- ==================== TABS ==================== -->
+  <!-- Chicos: Aquí usamos pestañas para mostrar distintos contenidos -->
+  <section class="container my-5">
+    <h2>Navegación por pestañas (Tabs)</h2>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">Profile</button>
+      </li>
+    </ul>
+    <div class="tab-content mt-3">
+      <div class="tab-pane fade show active" id="home" role="tabpanel">
+        <p>Contenido de la pestaña Home: Bienvenido al portal inicial.</p>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel">
+        <p>Contenido del perfil: Aquí podrás ver videos y cuentos.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== FORMULARIO DE INSCRIPCIÓN ==================== -->
+    <section class="container my-5" id="contacto">
+      <h2>Formulario de Inscripción </h2>
+      <form class="p-4 border rouded bg-light shadow-sm">
+         <!-- Nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre Completo">
+          </div>
+         <!-- CAPITULOS -->
+          <div class="mb-3">
+           <label for="taller-Select" class="form-label">Selecciona el Capitulo</label>
+           <select class="form-select" id="taller-selct">
+            <option value="1">Capitulo #1 </option>
+            <option value="2">Capitulo #2</option>
+            <option value="3">Capitulo #3 </option>
+           </select>
+          </div>
+         <!-- MODALIDAD -->
+          <div class="mb-4">
+            <label class="form-label"> Modalidad </label><br>
+            <input class="form-check-input" type="radio" name="modalidad"
+            id="presencial">
+            <label for="presencial">
+              Presencial </label><br>
+            <input class="form-check-input" type="radio" name="modalidadad"
+              id="online" checked>
+            <label for="online">
+              Online </label>
+          </div>
+          
+  <!-- ==================== MODAL ==================== -->
+  <!-- Chicos: Este modal se activa desde el botón "Más información" -->
+  <div class="modal fade" id="modalIA" tabindex="-1" aria-labelledby="modalIALabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalIALabel">Detalles de la pág.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          En esta pagina no solo podrás conocer las aventuras de Masha y el Oso, sino que también podrás conocer a las cualidades de cada uno de los personajes y descubrir más sobre la serie.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Inscribirme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== OFFCANVAS ==================== -->
+  <!-- Chicos: Este es un menú lateral oculto que se activa con un botón -->
+  <div class="container text-center my-5">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInfo" aria-controls="offcanvasInfo">
+      Abrir información lateral
+    </button>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfo" aria-labelledby="offcanvasInfoLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasInfoLabel">Más sobre Masha y el Oso</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Descubre más sobre nosotros.</p>
+      <p>Síguenos en redes para aprender más de nosotros.</p>
+    </div>
+  </div>
+<!-- ======== SECCIÓN INTERACTIVA ========= -->
+<section class="container my-5">
+    <h2 class="mb-4">Eventos Interactivos</h2>
+</section>
+<!-- onclick -->
+<section class="container my-5">
+    <h3>Evento Onclick</h3>
+    <button class="btn btn-warning" onclick="saludar()">
+        Haz clic para saludar
+    </button>
+    <p id="mensajeOnclick" class="mt-3 fw-bold"></p>
+</section>
+<!-- onmouseover -->
+<section class="container my-5">
+<h3> Evento onmouseover</h3>
+<div id="cuadroColor()"
+onmouseover="cambiarcolor()"
+onmouseout="restaurarColor()"
+         class="p-5 text-center border rounded"
+         style="background: #eee; ">
+        Para el cursor aquí
+    </div>
+</section>
+
+<!-- ======== onchange ========= -->
+<section class="container my-5">
+    <h3>Evento onchange</h3>
+    <select id="selector" class="form-select w-50" onchange="mostrarSeleccion()">
+        <option value="">Selecciona una opción</option>
+        <option value="Ciberseguridad">Ciberseguridad</option>
+        <option value="Marketing Digital">Marketing Digital</option>
+        <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+        <option value="Innovación Disruptiva">Innovación Disruptiva</option>
+        <option value="Automatización con IA">Automatización con IA</option>
+    </select>
+    <p id="textoOnchange" class="mt-3 fw-bold"></p>
+</section>
+<!-- ========= onchange + addEventListener ========== -->
+<section class="container my-5">
+
+    <!-- onchange -->
+    <section class="container my-5">
+        <h3>Evento onchange</h3>
+        <select id="mostrarSeleccionEjemplo" onchange="addEventListenerEjemplo()">
+            <option value="">Selecciona una opción</option>
+            <option value="Marketing Digital">Marketing Digital</option>
+            <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+            <option value="Automatización con IA">Automatización con IA</option>
+        </select>
+        <p id="addEventListener" class="mt-3 fw-bold"></p>
+    </section>
+
+    <!-- addEventListener -->
+    <section class="container my-5">
+      <h3>Evento addEventListener</h3>
+        <div class="card shadow-sm" style="width: 20rem;">
+        <img src="img/Nieve.jpg" class="card-img-top" alt="Taller de Marketing">
+          <div class="card-body">
+            <h5 class="card-title"> Aventuras en la nieve</h5>
+              <p class="cardTexto">
+                    Únete a Masha y El Oso en divertidas travesías por montañas llenas de nieve. Disfruta juegos, risas y momentos mágicos en un invierno lleno de aventuras. ¡La nieve jamás fue tan divertida!</p>
+              <button id="btnCambiarCard" class="btn btn-success">
+                    Actualizar Información</button>
+            </div>
+        </div>
+    </section>
+</section>
+        <!-- ======= NUEVOS SERVICIOS ======== -->
+     <section id="talleres-warrior">
+       <h2 class="text-center">Nuevos planes</h2>
+        <p class="text-center">
+          Descubre nuestros  diseñados para entretenerte a otro nivel, pasa horas viendo diferentes capitulos de Masha y el Oso. </p>
+        <div class="row mt-4">
+          <!-- Servicio 1 -->
+          <div class="col-md-4">
+            <div class="card p-2" id="card1">
+              <img src="img/Osoooo.jpg" class="card-img-top" alt="Análisis de Datos con IA">
+              <div class="card-body">
+                <h5 class="card-title">Plan premium</h5>
+                <p class="card-text precio">Precio: $399 MXN</p>
+                <p class="detalle" id="detalle1">
+                  Utiliza este plan para ti y toda tu familia por el mismo precio</p>
+                    <button class="btn btn-success mb-2 btnSelect1">
+                      Seleccionar Servicio</button>
+                    <button class="btn btn-danger btnRemove1">
+                      Eliminar Servicio</button>
+            </div>
+          </div>
+        </div>
+           <!-- Servicio 2 -->
+          <div class="col-md-4">
+            <div class="card p-2" id="card1">
+              <img src="img/Segundo.jpg" class="card-img-top" alt="Análisis de Datos con IA">
+              <div class="card-body">
+                <h5 class="card-title">Plan Plata</h5>
+                <p class="card-text precio">Precio: $499 MXN</p>
+                <p class="detalle" id="detalle1">
+                  Utiliza este plan para ti y toda tu familia, además de ver capitulos en vivo.</p>
+                    <button class="btn btn-success mb-2 btnSelect1">
+                      Seleccionar Servicio</button>
+                    <button class="btn btn-danger btnRemove1">
+                      Eliminar Servicio</button>
+            </div>
+          </div>
+        </div>
+            <!-- Servicio 3 -->
+          <div class="col-md-4">
+            <div class="card p-2" id="card1">
+              <img src="img/tercero.jpg" class="card-img-top" alt="Análisis de Datos con IA">
+              <div class="card-body">
+                <h5 class="card-title">Plan 0ro</h5>
+                <p class="card-text precio">Precio: $599 MXN</p>
+                <p class="detalle" id="detalle1">
+                  Utiliza este plan para ti y toda tu familia, además de ver capitulos en vivo, peliculas de Masha y el Oso y ahora podrás ver más programas.</p>
+                    <button class="btn btn-success mb-2 btnSelect1">
+                      Seleccionar Servicio</button>
+                    <button class="btn btn-danger btnRemove1">
+                      Eliminar Servicio</button>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </section>
+    </section>
+</section>
+  <!-- ============================================================
+     BOTÓN WHATSAPP FLOTANTE
+=============================================================== -->
+<a
+  href="https://wa.me/527221234567"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chatea por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ================= IMÁGENES DINÁMICAS ================= -->
+<section class="container my-5">
+    <h2 class="mb-4">Agregar imágenes dinámicamente</h2>
+
+    <!-- Input para ingresar URL -->
+    <div class="input-group mb-3">
+        <input 
+            type="text" 
+            id="inputImagen" 
+            class="form-control" 
+            placeholder="Ingresa la URL de la imagen (debe ser .jpg, .png, .webp, etc.)">
+        <button id="btnAgregarImagen" class="btn btn-primary">
+            Agregar Imagen
+        </button>
+    </div>
+
+    <!-- Galería donde se agregan las imágenes -->
+    <div id="galeria" class="row g-3"></div>
+</section>
+
+<!-- ================= SCRIPT DINÁMICO ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const btnAgregar = document.getElementById("btnAgregarImagen");
+    const inputUrl = document.getElementById("inputImagen");
+    const galeria = document.getElementById("galeria");
+
+    btnAgregar.addEventListener("click", () => {
+        const url = inputUrl.value.trim();
+
+        if (url === "") {
+            alert("Por favor ingresa una URL válida.");
+            return;
+        }
+
+        // Crear columna
+        const col = document.createElement("div");
+        col.className = "col-12 col-md-4 col-lg-3";
+
+        // Crear imagen
+        const img = document.createElement("img");
+        img.src = url;
+        img.className = "img-fluid rounded shadow-sm";
+        img.alt = "Imagen agregada dinámicamente";
+
+        // Si la imagen falla, se borra la tarjeta
+        img.onerror = () => {
+            alert("La URL no corresponde a una imagen válida.");
+            col.remove();
+        };
+
+        col.appendChild(img);
+        galeria.appendChild(col);
+
+        // Limpiar input
+        inputUrl.value = "";
+    });
+});
+</script>
+
+
+    <!-- Contenedor para las imágenes agregadas -->
+    <div id="galeria" class="row g-3"></div>
+</section>
+<!-- ================= IMÁGENES DINÁMICAS ================= -->
+<section id="agregar-imagen" class="container my-5">
+    <!-- ... -->
+</section>
+
+<!-- ACTIVIDAD: LISTA DE TAREAS PARA MERKA WARRIOR -->
+<section id="lista-warrior" class="container my-5">
+    <h2 class="mb-4">Lista de Tareas para ver Peliculas y/o capitulos.</h2>
+    <!-- Botón para eliminar primer elemento -->
+    <button id="btnEliminarPrimero" class="btn btn-danger mb-3">
+        Eliminar Primera Tarea
+    </button>
+    <ul id="listaTareas" class="list-group mb-3">
+        <li class="tarea1 list-group-item">Capitulos de Masha y el Oso</li>
+        <li class="tarea2 list-group-item">Peliculas transmitidas en canles de television </li>
+        <li class="tarea3 list-group-item">Capitulos y peliculas fav</li>
+    </ul>
+    <!-- Agregar nueva tarea  -->
+        <div class="input-group mt-3">
+        <input id="inputNuevaTarea" type="text" class="form-control"
+         placeholder="Escribe una nueva tarea" aria-label="Nueva tarea">
+        <button id="btnAgregarTarea" type="button" class="btn btn-success">
+        Agregar Tarea </button>
+        </div>
+</section>
+<!-- ================= CARRITO DE COMPRAS ================= -->
+<section id="carrito" class="container my-5">
+  <h2 class="mb-4">Carrito de compras</h2>
+  <ul id="lista-carrito" class="list-group mb-3">
+    <!-- Aquí se agregan los planes seleccionados -->
+  </ul>
+  <p class="fw-bold">
+    Total: <span id="total-carrito">$0 MXN</span>
+  </p>
+  <button id="btnVaciarCarrito" class="btn btn-danger btn-sm">
+    Vaciar carrito
+  </button>
+</section>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="bg-dark text-center text-white py-3 mt-5">
+  © 2025 Sara MG | Masha y el Oso 🧸
+  <div class="mt-2">
+    <a href="https://www.facebook.com/tuusuario" target="_blank" rel="noopener"
+       class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+    <a href="https://www.instagram.com/tuusuario" target="_blank" rel="noopener"
+       class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+    <a href="https://www.tiktok.com/@tuusuario" target="_blank" rel="noopener"
+       class="text-white me-3"><i class="fab fa-tiktok fa-lg"></i></a>
+    <a href="https://www.youtube.com/c/tuusuario" target="_blank" rel="noopener"
+       class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+    <a href="https://x.com/tuusuario" target="_blank" rel="noopener"
+       class="text-white"><i class="fab fa-x-twitter fa-lg"></i></a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

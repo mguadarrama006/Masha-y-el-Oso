@@ -1,0 +1,125 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    background-color: #fff3f3; /* Rosa pastel suave */
+    font-family: Arial, sans-serif;
+}
+
+/* ======== BANNER ======== */
+#banner {
+    background-color: #ff4d6d !important; /* Rojo rosado */
+    color: white;
+    font-weight: bold;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+    background-color: #ffe5ec !important; /* Rosa claro */
+}
+
+.navbar .nav-link {
+    color: #b30049 !important; 
+    font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+    color: #ff0059 !important; 
+}
+
+/* ======== CARRUSEL ======== */
+.carousel-item {
+    background-color: #ffdce4; /* Fondo rosita detrás de las imágenes */
+}
+
+/* ======== SECCIONES ======== */
+section {
+    background-color: #ffffffd8; 
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+/* ======== TARJETAS ======== */
+.card {
+    background-color: #fff0f6; /* Rosa pastel */
+    border: 2px solid #ffc2d1;
+}
+
+.card-header,
+.card-footer {
+    background-color: #ffccd5;
+    font-weight: bold;
+}
+
+.card-title {
+    color: #b30049;
+}
+
+/* ======== ALERTAS ======== */
+.alert-info {
+    background-color: #cce5ff;
+    border-left: 6px solid #3399ff;
+}
+
+/* ======== TESTIMONIOS ======== */
+.testimonio-vip {
+    background-color: #ffe0ec;
+}
+
+/* ======== TABS ======== */
+.nav-tabs .nav-link.active {
+    background-color: #ff80a6 !important;
+    color: white !important;
+}
+
+.nav-tabs .nav-link {
+    color: #b30049;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+    background-color: #fff0f6 !important;
+    border: 2px solid #ffb3c6;
+}
+
+/* ======== OFFCANVAS ======== */
+.offcanvas {
+    background-color: #ffe9f0;
+}
+
+/* ======== BOTÓN WHATSAPP FLOTANTE ======== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background-color: #400019 !important;
+}
+
+/* Estilos para el botón de WhatsApp (Ajuste para dar espacio al carrito) */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px; /* Posición más baja */
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
