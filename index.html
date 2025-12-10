@@ -20,8 +20,8 @@
 <!--========= BANNER PROMOCIONAL =========-->  
 <div id="banner" class="p-3 text-white text-center bg-danger">
   <!-- chicos: este banner será manipulado con getElementById -->
-  Banner de promoción: ¡Inscríbete ahora y obtén un 20% de descuento
-  en todos nuestros talleres!
+  Banner de promoción: ¡Suscribete ahora y obtén un 20% de descuento
+  en nuestros planes!
 </div>
 <!--=========NAVBAR========
 Chicos menú superior, se vuelve botón hamburguesa en móviles-->
@@ -45,6 +45,19 @@ Chicos menú superior, se vuelve botón hamburguesa en móviles-->
         <li class="nav-item"><a class="nav-link" href="#agregar-imagen">Agregar imagen</a> </li>
 
         </ul>
+        <li class="nav-item">
+  <button
+    class="btn btn-warning position-relative"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#carritoCanvas">
+    Carrito 🛒
+    <span id="contadorCarrito"
+      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      0
+    </span>
+  </button>
+</li>
+
       </div>
      </div>
   </nav>
@@ -218,7 +231,7 @@ Chicos menú superior, se vuelve botón hamburguesa en móviles-->
     <div>
         <h5 class="mb-1">Cliente Regular</h5>
         <p class="mb-0">
-            "Excelente contenido y profesores. Los talleres me ayudaron a mejorar mis habilidades en marketing e IA."
+            "Excelentes canales, desde mi perspectiva el mejor para ver a Masha y el Oso y los programas de CartoonNetwork."
         </p>
     </div>
 </div>
@@ -235,7 +248,7 @@ Chicos menú superior, se vuelve botón hamburguesa en móviles-->
         <div>
             <h5 class="mb-1 fw-bold">Cliente VIP</h5>
             <p class="mb-0">
-                "Los capitulos de Masha de aquí son los más divertidos, además son super dificil de encontrar en otro lugar"
+                "Me encanta esta página porque siempre encuentro capítulos de Masha y el Oso en excelente calidad. Además suben contenido que casi no aparece en otras plataformas. ¡Es mi lugar favorito para ver la serie!"
             </p>
         </div>
     </div>
@@ -252,7 +265,7 @@ Chicos menú superior, se vuelve botón hamburguesa en móviles-->
     <div>
         <h5 class="mb-1">Cliente Regular</h5>
         <p class="mb-0">
-            "Excelente contenido y profesores. Los talleres me ayudaron a mejorar mis habilidades en marketing e IA."
+            "El plan familiar permite que varias personas se conecten para ver series y películas sin interrupciones. Es una opción práctica para disfrutar contenidos como Masha y el Oso con buena calidad y disponibilidad constante."
         </p>
     </div>
 </div>
@@ -374,14 +387,14 @@ onmouseout="restaurarColor()"
 
 <!-- ======== onchange ========= -->
 <section class="container my-5">
-    <h3>Evento onchange</h3>
+    <h3>Opciones de peliculas</h3>
     <select id="selector" class="form-select w-50" onchange="mostrarSeleccion()">
         <option value="">Selecciona una opción</option>
-        <option value="Ciberseguridad">Ciberseguridad</option>
-        <option value="Marketing Digital">Marketing Digital</option>
-        <option value="Inteligencia Artificial">Inteligencia Artificial</option>
-        <option value="Innovación Disruptiva">Innovación Disruptiva</option>
-        <option value="Automatización con IA">Automatización con IA</option>
+        <option value="Ciberseguridad">Masha y el Oso: La Gran Carrera del Bosque</option>
+        <option value="Marketing Digital">El Misterio de la Mermelada Desaparecida</option>
+        <option value="Inteligencia Artificial">Masha y la Fiesta de las Estaciones</option>
+        <option value="Innovación Disruptiva">El Oso que No Quería Dormir</option>
+        <option value="Automatización con IA">Aventura en el Bosque Nevado</option>
     </select>
     <p id="textoOnchange" class="mt-3 fw-bold"></p>
 </section>
@@ -390,19 +403,19 @@ onmouseout="restaurarColor()"
 
     <!-- onchange -->
     <section class="container my-5">
-        <h3>Evento onchange</h3>
+        <h3>Opciones de libros </h3>
         <select id="mostrarSeleccionEjemplo" onchange="addEventListenerEjemplo()">
             <option value="">Selecciona una opción</option>
-            <option value="Marketing Digital">Marketing Digital</option>
-            <option value="Inteligencia Artificial">Inteligencia Artificial</option>
-            <option value="Automatización con IA">Automatización con IA</option>
+            <option value="Marketing Digital">Masha y el Día de los Inventos Locos</option>
+            <option value="Inteligencia Artificial">El Gran Concierto de los Animales</option>
+            <option value="Automatización con IA">El Mapa Secreto de Masha</option>
         </select>
         <p id="addEventListener" class="mt-3 fw-bold"></p>
     </section>
 
     <!-- addEventListener -->
     <section class="container my-5">
-      <h3>Evento addEventListener</h3>
+      <h3>Peliculas</h3>
         <div class="card shadow-sm" style="width: 20rem;">
         <img src="img/Nieve.jpg" class="card-img-top" alt="Taller de Marketing">
           <div class="card-body">
@@ -413,6 +426,7 @@ onmouseout="restaurarColor()"
                     Actualizar Información</button>
             </div>
         </div>
+        
     </section>
 </section>
         <!-- ======= NUEVOS SERVICIOS ======== -->
@@ -575,19 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Agregar Tarea </button>
         </div>
 </section>
-<!-- ================= CARRITO DE COMPRAS ================= -->
-<section id="carrito" class="container my-5">
-  <h2 class="mb-4">Carrito de compras</h2>
-  <ul id="lista-carrito" class="list-group mb-3">
-    <!-- Aquí se agregan los planes seleccionados -->
-  </ul>
-  <p class="fw-bold">
-    Total: <span id="total-carrito">$0 MXN</span>
-  </p>
-  <button id="btnVaciarCarrito" class="btn btn-danger btn-sm">
-    Vaciar carrito
-  </button>
-</section>
+
 
 <!-- ========================= FOOTER ========================= -->
 <footer class="bg-dark text-center text-white py-3 mt-5">
@@ -606,9 +608,95 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </footer>
 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">🛒 Tu Carrito</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul id="listaCarrito" class="list-group mb-3"></ul>
+
+    <h5 class="mt-3">Total: $<span id="totalCarrito">0</span> MXN</h5>
+
+    <button class="btn btn-success w-100 mt-3">Comprar ahora</button>
+  </div>
+</div>
+
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="app.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  const listaCarrito = document.getElementById("listaCarrito");
+  const totalCarrito = document.getElementById("totalCarrito");
+  const contadorCarrito = document.getElementById("contadorCarrito");
+
+  function actualizarCarrito() {
+    listaCarrito.innerHTML = "";
+    let total = 0;
+
+    carrito.forEach((item, index) => {
+      total += item.precio;
+
+      const li = document.createElement("li");
+      li.className = "list-group-item d-flex justify-content-between align-items-center";
+      li.innerHTML = `
+        <div>
+          <strong>${item.nombre}</strong> <br>
+          <small>$${item.precio} MXN</small>
+        </div>
+        <button class="btn btn-danger btn-sm" onclick="eliminarItem(${index})">X</button>
+      `;
+      listaCarrito.appendChild(li);
+    });
+
+    totalCarrito.textContent = total;
+    contadorCarrito.textContent = carrito.length;
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }
+
+  window.eliminarItem = function(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+  };
+
+  // 👉 Botones que agregan servicios
+  document.querySelectorAll(".btnSelect1").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+
+      const card = e.target.closest(".card");
+
+      const nombre = card.querySelector(".card-title").textContent;
+      const precioTexto = card.querySelector(".precio").textContent;
+      const precio = parseInt(precioTexto.replace(/[^0-9]/g, ""));
+      const img = card.querySelector("img").src;
+
+      carrito.push({ nombre, precio, img });
+      actualizarCarrito();
+    });
+  });
+
+  // 👉 Botones que eliminan servicios desde la tarjeta
+  document.querySelectorAll(".btnRemove1").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const card = e.target.closest(".card");
+      const nombre = card.querySelector(".card-title").textContent;
+
+      carrito = carrito.filter(item => item.nombre !== nombre);
+
+      actualizarCarrito();
+    });
+  });
+
+  actualizarCarrito();
+});
+</script>
 
 </body>
 </html>
